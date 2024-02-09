@@ -33,7 +33,7 @@ export const MainRouter = ({ Children }) => {
     const isCoordinator = (sport) => {
         const token = Cookies.get('token');
         if (token) {
-            console.log("decoded token -> ", decodeToken(token))
+            // console.log("decoded token -> ", decodeToken(token))
             if (decodeToken(token).sport === sport) {
                 return true;
             }
