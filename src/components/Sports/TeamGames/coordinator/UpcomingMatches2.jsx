@@ -36,7 +36,7 @@ export const UpcomingMatches2 = ({ sport }) => {
 
   const UpcomingComponent = ({ match }) => (
     <>
-      <div className="table" style={{backgroundColor:"white"}}>
+      <div className="table" style={{ backgroundColor: "white" }}>
         <div className="enlist">
           <div id={`player1name${match._id}`} className="names">
             {match.team1}
@@ -62,13 +62,13 @@ export const UpcomingMatches2 = ({ sport }) => {
   return (
     <div>
       <div className="category">
-        <div className="specification" id="up">
-          <Link to={`/coordinator/${sport}/upcoming`} id="up">
+        <div className="specification" id="up" style={{ backgroundColor: "darkblue", color: "white" }}>
+          <Link to={`/coordinator/${sport}/upcoming`} id="up" style={{ color: "white" }}>
             Upcoming
           </Link>
         </div>
-        <div className="specification" id="on" style={{ backgroundColor: "darkblue", color: "white" }}>
-          <Link to={`/coordinator/${sport}/ongoing`} id="on">
+        <div className="specification" id="on" style={{ backgroundColor: "transparent", color: "grey" }}>
+          <Link to={`/coordinator/${sport}/ongoing`} id="on" style={{ backgroundColor: "transparent", color: "grey" }}>
             Ongoing
           </Link>
         </div>

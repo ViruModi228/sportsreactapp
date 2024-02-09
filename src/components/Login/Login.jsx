@@ -2,9 +2,8 @@ import React from 'react'
 import '../../styles/style1.css'
 import img1 from '../../images/logossit.png'
 import { useForm } from 'react-hook-form'
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Navigate, Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import { Navbar2 } from '../navbar/Navbar2';
@@ -16,58 +15,60 @@ export const Login = () => {
     });
     const navigate = useNavigate();
     const onSubmit = async (data) => {
-        // console.log(data.password)
         var loginData = {
             id: data.id,
             password: data.password,
-            sport:data.password
+            sport: data.id.split('_')[0]
         }
         try {
             const response = await axios.post('http://localhost:3001/api/v1/coordinator/login', loginData);
             // is authenticated user
             if (response.status === 200) {
-                Cookies.set('token', response.data.token,{ expires: 1})  // day expiry
+                Cookies.set('token', response.data.token, { expires: 1 })  // day expiry
 
-                if (data.password === "badminton") {
+                //get role
+                const roleResponse = await axios.get(`http://localhost:3001/api/v1/coordinator/role/${response.data.coordinator._id}`);
+                const role = roleResponse.data.data.role;
+                if (role === 1) {
                     navigate("/coordinator/badminton")
                 }
-                else if (data.password === "cricket") {
+                else if (role === 5) {
                     navigate("/coordinator/cricket")
                 }
-                else if (data.password === "volleyball") {
+                else if (role === 3) {
                     navigate("/coordinator/volleyball")
                 }
-                else if (data.password === "chess") {
+                else if (role === 4) {
                     navigate("/coordinator/chess")
                 }
-                else if (data.password === "carrom") {
+                else if (role === 6) {
                     navigate("/coordinator/carrom")
                 }
-                else if (data.password === "tabletennis") {
+                else if (role === 2) {
                     navigate("/coordinator/tabletennis")
                 }
-                else if (data.password === "kabaddi") {
+                else if (role === 7) {
                     navigate("/coordinator/kabaddi")
                 }
-                else if (data.password === "satoliya") {
+                else if (role === 8) {
                     navigate("/coordinator/satoliya")
                 }
-                else if (data.password === "football") {
+                else if (role === 9) {
                     navigate("/coordinator/football")
                 }
-                else if (data.password === "khokho") {
+                else if (role === 11) {
                     navigate("/coordinator/khokho")
                 }
-                else if (data.password === "tugofwar") {
+                else if (role === 10) {
                     navigate("/coordinator/tugofwar")
                 }
-                else if (data.password === "pumpandsprint") {
+                else if (role === 12) {
                     navigate("/coordinator/pumpandsprint")
                 }
-                else if (data.password === "100mrace") {
+                else if (role === 13) {
                     navigate("/coordinator/100mrace")
                 }
-                else if (data.password === "pointstable") {
+                else if (role === 14) {
                     navigate("/coordinator/pointstable")
                 }
             }
@@ -77,7 +78,7 @@ export const Login = () => {
     };
     return (
         <>
-        <Navbar2/>
+            <Navbar2 />
             <div>
                 <div className="cointainer100">
                     <div className="box-form">
@@ -122,7 +123,7 @@ export const Login = () => {
                             <a href="https://www.ssit.co.in/">
                                 <img className="logo" src={img1} alt="" />
                             </a>
-                    
+
                             <h5 id='login'>Login</h5>
                             <br /><br />
 
