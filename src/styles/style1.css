@@ -1,0 +1,218 @@
+body  {
+    font-family: "Open Sans", sans-serif;
+    color:black;
+    /* background-color:black; */
+}
+  
+    .cointainer100{
+      background-color:black;
+      height: fit-content;
+    }
+   
+  
+  .box-form {
+    margin: 0 auto;
+    width: 80%;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+    margin-top: 4rem;
+  }
+  @media (max-width: 980px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+  .form-id,.form-password{
+    font-weight: bolder;
+    color: white;
+    width: 10%;
+    margin-top: 1rem;
+  }
+  .box-form div {
+    height: auto;
+  }
+  h4{
+    font-size: 30px;
+  }
+  .box-form .left {
+    color: #FFFFFF;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),
+                      url("../images/loginbg.jpg");
+                      background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: left;
+    overflow: hidden;
+    transition: 1.5s linear ;
+    background-size: contain;
+  }
+  .box-form .left .overlay {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .box-form .left .overlay h1 {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .box-form .left .overlay span p {
+    margin-top: 30px;
+    font-weight: 900;
+  }
+  .box-form .left .overlay span a {
+    background:rgb(4, 52, 136);
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 14px 50px;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: 0 3px 6px 1px #042d4657;
+  }
+  .box-form .left .overlay span a:hover{
+    transform: scale(1.1);
+    background-color: #333333;
+  }
+  
+  .links{
+    margin: 0 8px;
+    transition: 1s  ease-in-out;
+  }
+  .box-form .right {
+    padding: 40px;
+    overflow: hidden;
+  }
+  @media (max-width: 980px) {
+    .box-form .right {
+      width: 100%;
+    }
+    .logo{
+      
+      padding-right: 380px;
+    }
+  }
+  .box-form .right h5 {
+    font-size: 50px;
+    line-height: 0;
+  }
+  .box-form .right p {
+    font-size: 14px;
+    color: #B0B3B9;
+  }
+  .box-form .right .inputs {
+    overflow: hidden;
+  }
+  .box-form .right input {
+    width: 600px;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+  }
+  .box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box-form .right .remember-me--forget-password input {
+    margin: 0;
+    margin-right: 7px;
+    width: auto;
+  }
+  .box-form .right button {
+    
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 20px 0px rgb(4, 52, 136);
+    background-image: linear-gradient(135deg, rgb(4, 52, 136) 10%,rgb(4, 40, 103) 100%);
+  }
+  
+  label {
+    display: block;
+    position: relative;
+    margin-left: 30px;
+  }
+  #login{
+    /* font-family: FontAwesome; */
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  label::before {
+    content: ' \f00c';
+    position: absolute;
+    font-family: FontAwesome;
+    background: transparent;
+    border: 3px solid rgb(4, 52, 136);
+    border-radius: 4px;
+    color: transparent;
+    left: -30px;
+    transition: all 0.2s linear;
+  }
+  
+  label:hover::before {
+    font-family: FontAwesome;
+    content: ' \f00c';
+    color: #fff;
+    cursor: pointer;
+    background:rgb(4, 52, 136);
+  }
+  
+  label:hover::before .text-checkbox {
+    background: rgb(4, 52, 136);
+  }
+  
+  label span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  
+  label input[type="checkbox"] {
+    display: none;
+  }
+  .logo{
+    left: 37%;
+    position: relative;
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .create-acc{
+    padding: 0 20px 20px 20px;
+  }
+  .smm{
+    font-size: 30px;
+  }
+  a:hover{
+    transform: scale(1.10);
+    color: rgb(4, 52, 136);
+  }
+  .email-lowercase{
+    text-transform: lowercase;
+  }
+  

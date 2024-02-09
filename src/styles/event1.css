@@ -1,0 +1,435 @@
+.navbar1{
+   position: absolute;
+   top:17%;
+    width:100%;
+    height:10vh;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 23px;
+    letter-spacing: 1rem;
+
+}
+.navbar-brand{
+    text-align: center;
+    margin-top: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.container-fluid{
+    position: relative;
+}
+.category{
+    /* border: 1px solid black; */
+    /* width: ; */
+    height: 9vh;
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left:38%;
+    border: 2px solid whitesmoke;
+    box-shadow: 1px 1px 1px 1px #a8a7a7;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+}
+.specification{
+    flex: 1;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: transparent;
+    color: grey;
+    height: 4vh;
+    /* border: 1px solid red; */
+    margin-top: 1.2vh;
+    border-radius: 20px;
+}
+.specification a{
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+.maindivv{
+    /* border: 3px solid black; */
+    /* background-color: ; */
+    height: fit-content;
+    width:60%;
+    margin: auto;
+    margin-top: 4rem;
+    position: absolute;
+    top:28%;
+    left:13%;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    height:35vh;
+    margin-bottom: 1.5rem;
+    /* border: 2px solid yellow; */
+}
+.table{
+    /* border: 2px solid blue; */
+    /* width:80%; */
+    /* height:fit-content; */
+    padding: 1rem;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+.win_consists{
+    /* border: 1px solid Blue; */
+    text-align: center;
+    margin-top: 0.8rem;
+    font-size: 20px;
+    font-weight: bold;
+    width:80%;
+    background-color: rgba(8, 8, 118, 0.8);
+    height:4.5vh;
+    color: white;
+}
+.heading{
+    /* border-bottom: 2px solid grey; */
+    display: flex;
+    flex-direction: row;
+    height:9vh;
+
+}
+.title{
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    height:7.5vh;
+}
+.enlist{
+     /* border: 1px solid red; */
+     display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    width: 100%;
+}
+.playerkename{
+   
+    display: flex;
+    flex-direction: row;
+    /* height: fit-content; */
+    width: 78%;
+    /* background-color: blue; */
+    color: white;
+    /* margin-bottom: 3rem; */
+} 
+#palyer1{
+    /* border: 1px solid yellow; */
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-size: 14px;
+    height:8vh;
+    border-right:1px solid white ;
+    width: 89%;
+    text-align: center;
+    font-weight: bold;
+
+}
+#palyer2{
+    /* border: 1px solid yellow; */
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    height:8vh;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.img{
+    width:50%;
+    height: 10vh;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top:0%;
+    left:30%;
+}
+
+/* ------------------------------------------------ */
+.input_winnerbox
+{
+    background-color: transparent;
+    /* border: 1px solid red; */
+    /* margin-right: 2rem; */
+    flex: 1;
+}
+ .score{
+    /* border: 1px solid blue; */
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+
+.live-change{
+    /* border: 2px solid magenta; */
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width:100%;
+    gap: 0.5rem;
+    height:6vh;
+}
+.live-change button{
+    background-color: darkblue;
+    color:white;
+}
+/* #num1{
+    flex:1;
+    
+}*/
+
+.score-change input{
+    width:20%;
+    height:3.2vh;
+    margin-top: 0.3rem;
+    /* margin: 50px; */
+}
+
+.score-change{
+    background-color: transparent;
+    width:80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-left: 4rem; */
+}
+.sendup{
+    /* flex:0.3; */
+    width:20%;
+    height:5.5vh;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    /* background-color:darkblue; */
+    /* color:white; */
+    font-weight: bold;
+    /* border: 3px solid red; */
+    /* margin: 50px; */
+    position: relative;
+    left: 80%;
+    bottom: 90%;
+}
+.sendup:hover{
+    font-size: 18px;
+}
+
+.rounds{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+.round_info{
+    /* border: 2px solid white; */
+    flex:1;
+    text-align: center;
+}
+.mainscore{
+    /* border: 1px solid orange; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+button{
+    background-color: darkblue;
+    color: white;
+}
+.score{
+    /* background-color: aqua; */
+    border: 1px solid black;
+}
+.enter_input12{
+    margin-top: 2rem;
+    border: 2px solid darkblue;
+    width: 90%;
+    margin-left: 1rem;
+}
+.confirm_win12{
+    margin-top: 0.7rem;
+    margin-left: 5rem;
+    width:42%;
+    border-radius: 10px;
+    border:none;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    height: 4.5vh;
+    font-size: 15px;
+    /* position: relative; */
+}
+.confirm_win12:hover{
+    font-size: 17px;
+}
+.p1score{
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    /* border: 1px solid yellow; */
+    font-size: 1.5rem;
+    width:29%;
+    text-align: center;
+}
+.p2score{
+    margin-left: 1rem;  
+    /* border: 1px solid red; */
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    width:25%;
+    text-align: center;
+
+}
+
+
+/* media queries */
+ @media screen and (max-width: 435px){
+    .category {
+        width:100%;
+        left: 0%;
+    }
+    .navbar1{
+        top:19%;
+    }
+} 
+
+@media screen and (max-width: 1050px){
+    .maindivv{
+        width:80%;
+    }
+}
+@media screen and (max-width:700px) {
+    .sendup{
+        font-size: 14px;
+    }
+    .opponent{
+        font-size: 18px;
+    }
+    .win_consists{
+        font-size: 18px;
+    }
+}
+@media screen and  (max-width:700px) {
+    .parent{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .rounds{
+        width:90%;
+        margin: auto;
+    }
+    .enlist{
+        position: relative;
+     }
+    .mainscore{
+        width: 90%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .enter_input12{
+        width:90%;
+        margin-left:4%;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+    .confirm_win12{
+       margin-bottom: 1rem;
+
+    }
+    .score-change{
+        width:100%;
+        /* margin-top:   1rem; */
+    }
+    .score-change input{
+        width: 45%;
+        margin-left: 0.8rem;
+    }
+    .sendup{
+        font-size: 12px;
+        width:25%;
+        margin-left: 1rem;
+    }
+    .sendup:hover{
+        font-size: 14px;
+    }
+}
+@media  screen and(max-width: 300px){
+    .sendup{
+        font-size: 10px;
+    }
+    .playerkename{
+        width: 70%;
+    }
+}
+@media  screen and (min-height:900px) {
+   
+    .category{
+        height:6vh;
+        /* background-color: blue; */
+    }
+    .specification{
+        /* margin-top: 0.5vh; */
+        height: 2vh;   
+        background-color: black; 
+    }
+    .playerkename{
+        height:5vh;
+    }
+    .score-change {
+        /* height:2vh; */
+        margin-top: 0.7rem;
+        /* background-color: red; */
+    }
+}
+
+@media  screen and (min-width:385px) {
+
+    .navbar1{
+        /* position: absolute; */
+        top:16%;
+    
+    }
+    .category{
+        top:25%;
+    }
+}
+@media  screen and (max-width:385px) {
+
+    .navbar1{
+        /* position: absolute; */
+        top:25%;
+    }
+    .category{
+        top:34%;
+    }
+    .maindivv{
+        top:37%;
+    }
+}
+@media  screen and (min-width:700px) {
+
+    .navbar1{
+        top:18%;
+    }
+    .category{
+        top:27%;
+    }
+    .maindivv{
+        top:37%;
+    }
+}
